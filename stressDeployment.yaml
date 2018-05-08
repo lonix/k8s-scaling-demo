@@ -7,10 +7,10 @@ spec:
   template:
     metadata:
       labels:
-        app: myhpa
+        app: stress
     spec:
       containers:
-      - name: myhpa
+      - name: stress
         image: tkubica/stress
         env:
         - name: STRESS_TIMEOUT
